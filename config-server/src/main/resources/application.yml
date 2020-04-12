@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/shanzhaozhen/cloud-study
-          search-paths: config-repo/eureka-server,config-repo/eureka-client
+          search-paths: config-repo/client, config-repo/server
 #          username: shanzhaozhen
 #          passphrase:
 eureka:
