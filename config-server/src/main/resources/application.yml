@@ -1,6 +1,14 @@
 spring:
   application:
     name: config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/shanzhaozhen/cloud-study
+          search-paths: /config-server/src/main/resources/config
+#          username: shanzhaozhen
+#          passphrase:
 eureka:
   client:
     service-url:
@@ -8,4 +16,4 @@ eureka:
     register-with-eureka: false   # 表示是否将自己注册到Eureka Server，默认为true
 #    fetch-registry: false         # 表示是否从Eureka Server获取注册信息，默认为true
 server:
-  port: 8002
+  port: 8001
