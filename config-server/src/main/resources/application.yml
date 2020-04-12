@@ -6,7 +6,7 @@ spring:
       server:
         git:
           uri: https://github.com/shanzhaozhen/cloud-study
-          search-paths: /config-server/src/main/resources/config
+          search-paths: /config-server/src/main/resources/cloud-config
 #          username: shanzhaozhen
 #          passphrase:
 eureka:
