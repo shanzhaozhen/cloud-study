@@ -8,4 +8,4 @@ server:
   port: 8000
 spring:
   application:
-    name: eureka-server
+    name: eureka-server-dd
