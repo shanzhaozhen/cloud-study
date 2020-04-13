@@ -3,4 +3,4 @@ server:
   port: 8003
 test-object:
   name: sam
-  age: 18
+  age: 19
