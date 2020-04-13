@@ -9,9 +9,19 @@ spring:
           search-paths: config-repo/{application}
 #          username: shanzhaozhen
 #          passphrase:
+  rabbitmq:
+    addresses: 192.168.123.2
+    port: 5672
+    username: admin
+    password: 123456
 eureka:
   client:
     service-url:
       defaultZone: http://localhost:8000/eureka/  #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。默认是http://localhost:8761/eureka ；多个地址可使用 , 分隔
 server:
   port: 8001
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
