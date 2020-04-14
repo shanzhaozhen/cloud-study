@@ -9,5 +9,10 @@ spring:
         enabled: true
         service-id: config-server
       profile: test
+    stream:
+      bindings:
+        myMessage:
+          group: client
+          content-type: application/json
   application:
     name: eureka-client
