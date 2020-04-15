@@ -1,5 +1,5 @@
 server:
-  port: 8004
+  port: 8002
 spring:
   rabbitmq:
     addresses: 192.168.123.2
