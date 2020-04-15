@@ -1,6 +1,6 @@
 env: dev
 server:
-  port: 8004
+  port: 8003
 test-object:
   name: sam
   age: 18
