@@ -7,7 +7,7 @@ spring:
     config:
       discovery:
         enabled: true
-        service-id: api-gateway
+        service-id: config-server
       profile: test
   application:
-    name: eureka-client
+    name: api-gateway
