@@ -18,4 +18,9 @@ public class TestController {
         return testObject;
     }
 
+    @GetMapping("/ignore")
+    public Object ignore() {
+        return "禁用的链接";
+    }
+
 }

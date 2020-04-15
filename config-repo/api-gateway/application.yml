@@ -1,8 +1,20 @@
 server:
   port: 8002
-spring:
-  rabbitmq:
-    addresses: 192.168.123.2
-    port: 5672
-    username: admin
-    password: 123456
+zuul:
+  routes:
+    #    两种写法
+    #    1.
+    #    eureka-client:
+    #      path: /client/**
+    #      service-id: eureka-client
+    #      sensitiveHeaders: # 设置过滤的头信息，默认值为"Cookie", "Set-Cookie", "Authorization"，不设置则不会过滤掉，可以通过路由传到其他微服务
+    #    2.
+    eureka-client: /client/**
+  ignored-patterns: # 禁用通过网关访问
+    - /**/ignore
+    - /client/ignore
+#management:
+#  endpoints:
+#    web:
+#      exposure:
+#        include: "*"
